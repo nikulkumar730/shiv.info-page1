@@ -1,0 +1,349 @@
+
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box !important;
+}
+/* p{
+    margin: 0;
+} */
+a{
+    text-decoration: none;
+}
+.p-inline{
+    padding-inline:100px;
+}
+.active{
+    color: #FFC107 !important;
+}
+.nav-link{
+    border: 2px solid transparent;
+}
+.nav-link:hover{
+    color: #FFC107;
+    box-sizing: border-box;
+    border-bottom:2px solid #FFC107;
+    display: inline-table;
+    margin-top: -5px;
+}
+.carousel-item {
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-caption {
+    position: absolute;
+    z-index: 100;
+    top: 58%;
+    transform: translateY(-50%);
+    color: #fff;
+    text-align: center;
+}
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+    z-index: 1;
+}
+.carousel-caption h1,.carousel-caption p{
+    color: #ffffff;
+    z-index: 3;
+position: relative;
+}
+.label{
+    background-color: #FFC107;
+
+}
+.carousel-button{
+    background-color: #FFC107;
+    padding: 15px !important;
+    margin-top: 10px !important;
+    outline: none !important;
+    border: none;
+    color: #fff;
+}
+.botton-light{
+    background-color: #fff;
+    padding: 7px 20px ;
+}
+.div-p> p{
+    margin: 0 !important;
+}
+.line{
+    text-align: center;
+    width: 7vw;
+    height: 4px;
+    background-color: #FFC107;
+}
+.yellow{
+    color: #FFC107;
+}
+.bg-color{
+   background-color:  #F5F5F5;
+}
+/* PROJECT SECTION STYLE START */
+
+.project-nav .nav-link:hover {
+    color: #E4A11B !important;
+}
+
+/* Hide card-body by default */
+/* Hide card-body by default and position it on top of the image */
+.custom-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.custom-card .card-body {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: #fff;
+    padding: 20px;
+    opacity: 0;
+    height: 100%;
+    transition: opacity 0.3s ease;
+}
+
+/* Show card-body on hover */
+.custom-card:hover .card-body {
+    opacity: 1;
+}
+
+/* Card image stays full size */
+.custom-card .card-img-top {
+    transition: transform 0.3s ease;
+    object-fit: cover;
+     /* Fixed height for uniformity */
+    width: 100%; /* Ensure full width */
+}
+
+.fs-10{
+    font-size: 10px !important;
+}
+.sub-news-img{
+    width: 25%;
+    height: 100%;
+}
+.sub-news-img img{
+    width: 100%;
+}
+.dream-background{
+    background-image: url(https://images.unsplash.com/photo-1617713964959-d9a36bbc7b52?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHNxdWFyZSUyMGJveCUyMCUyMGJhY2tncm91bmQlMjB3aGl0ZXxlbnwwfHwwfHx8MA%3D%3D);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+ 
+}
+.btn-quote{
+    background-color: #E4A11B;
+    color: #fff;
+}
+
+.line{
+    height: 0.5vh;
+    width: 10vh;
+    background-color: #FFC107;
+}
+.costom-text{
+    font-size: 18px;
+    font-weight: bold;
+}
+.img-border {
+    border: 1px solid #e7e8e9; /* Change border color here */
+    /* border-radius: 5px;  */
+    /* margin-bottom: 15px; Space between images */
+}
+.img-border-bottom{
+    border-bottom: 2px solid #e7e8e9;
+}
+.img-border-bottom:hover{
+    border-bottom:2px solid #E4A11B ;
+}
+.p-12{
+    padding: 0 12px !important;
+}
+/* Adjust text and layout for responsiveness */
+@media (max-width: 767px) {
+    .custom-card .card-img-top {
+        height: auto;
+    }
+
+    .custom-card .card-body {
+        text-align: center; 
+    }
+    .end-to-start{
+        justify-content: start !important;
+    }
+    .p-box{
+        padding: 10px 10px !important;
+        margin: 0px 5px;
+    }
+}
+
+.line-height{
+    line-height: 2rem;
+}
+/* PROJECT SECTION STYLE END */
+.border-r::after{
+content: '|';
+}
+@media (max-width: 576px) {
+.p-inline{
+    padding-inline: 50px;
+}
+.w-25 {
+    width: 35% !important;
+}
+}
+@media  (max-width:768px) {
+    .p-inline{
+        padding-inline: 10px;
+    }
+    .w-25{
+        width: 25% !important;
+    }
+  }
+  @media (min-width: 768px) {
+    .p-inline{
+        padding-inline: 50px;
+    } 
+   
+  }
+  @media (max-width: 992px) {
+    .w-25 {
+        width: 35% !important;
+    }
+     
+  }
+  @media (min-width: 1200px) {
+/* .w-25{
+    width: 30% !important;
+} */
+  }
+  /* testimonial */
+  .p-box{
+    padding: 5px 5px !important;
+    margin: 0px 5px;
+}
+.bg-gray{
+    background-color: lightgray;
+}
+/* CAROUSEL SECTION START */
+.btn-hover:hover {
+    background-color: #E4A11B !important;
+    color: #fff !important;
+}
+
+.btn-hover span {
+    font-size: 0.9rem;
+}
+
+.carousel-item {
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.7) 100%);
+    z-index: 1;
+}
+
+.carousel-caption {
+    position: absolute;
+    z-index: 2;
+    top: 58%;
+    transform: translateY(-50%);
+    color: #fff;
+    text-align: center;
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+    z-index: 3;
+    position: relative;
+}
+/*       <div class="col-12 col-sm-6 col-md-4 mb-sm-3 mb-md-3 mb-xs-3 p-0 border-bottom">
+        <div class="p-3">
+          <div class="row ">
+            <div class="col-6">
+              <div class="text-center">
+                <i class="fa-solid fa-hammer yellow fs-1 mb-3"></i>
+                <p>Electric</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="text-center">
+                <i class="fa-solid fa-pen-to-square yellow fs-1 mb-3"></i>
+                <p>Design</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 mb-sm-3 mb-md-3 mb-xs-3 p-0 border-bottom">
+        <div class="p-3">
+          <div class="row">
+            <div class="col-6">
+              <div class="text-center">
+                <i class="fa-solid fa-car yellow fs-1 mb-3"></i>
+                <p>Transport</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="text-center">
+                <i class="fa-solid fa-faucet-drip yellow fs-1 mb-3"></i>
+                <p>Water</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 mb-sm-3 mb-md-3 mb-xs-3 p-0 border-bottom">
+        <div class="p-3">
+          <div class="row">
+            <div class="col-6">
+              <div class="text-center">
+                <i class="fa-solid fa-road-bridge yellow fs-1 mb-3"></i>
+                <p>Infrastructure</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="text-center">
+                <i class="fa-solid fa-building yellow fs-1 mb-3"></i>
+                <p>Building</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> */
